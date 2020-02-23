@@ -28,7 +28,7 @@ import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
 
-public class AddPlaceStepDefinition extends TestUtil{
+public class StepDefinition extends TestUtil{
 
 	RequestSpecification res;
 	ResponseSpecification resspec;

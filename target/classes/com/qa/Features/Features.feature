@@ -22,7 +22,7 @@ Examples:
 |sevan|AA Frontline house|English|
 |Rajvee|BB Frontline house|French|
 
-@Regression
+@Regression @DeleteAPI
 Scenario: Verify whether place is being successfully deleted using DeletePlace API
 
 Given DeletePlaceAPI Payload

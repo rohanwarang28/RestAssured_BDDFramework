@@ -11,7 +11,7 @@ features="src\\main\\java\\com\\qa\\Features\\Features.feature",
 glue = {"com.qa.StepDefinition"},
 dryRun=false,
 strict = true,
-tags= {"@Regression"})
+tags= {"@DeleteAPI"})
 
 public class TestRunner {
 
