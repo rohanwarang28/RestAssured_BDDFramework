@@ -10,7 +10,8 @@ import io.cucumber.junit.CucumberOptions;
 features="src\\main\\java\\com\\qa\\Features\\Features.feature",
 glue = {"com.qa.StepDefinition"},
 dryRun=false,
-strict = true)
+strict = true,
+tags= {"@Regression"})
 
 public class TestRunner {
 

@@ -1,5 +1,6 @@
 Feature: Validating place API's
 
+@Regression
 Scenario Outline: Verify whether place is being successfully added using AddPlace API
 
 Given AddPlaceAPI Payload with "<name>" "<address>" and "<language>"
@@ -21,6 +22,7 @@ Examples:
 |sevan|AA Frontline house|English|
 |Rajvee|BB Frontline house|French|
 
+@Regression
 Scenario: Verify whether place is being successfully deleted using DeletePlace API
 
 Given DeletePlaceAPI Payload
