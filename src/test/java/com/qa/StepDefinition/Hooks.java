@@ -21,9 +21,9 @@ public class Hooks {
 	
 		StepDefinition sd = new StepDefinition();
 		
-		sd.addplaceapi_Payload_with_and("Rohan", "India", "Marathi");
+		sd.addplaceapi_Payload_with_and("ABC", "India", "Marathi");
 		sd.user_calls_the_with_http_request("AddPlaceAPI", "POST");
-		sd.verify_whether_place_id_created_maps_to("Rohan");
+		sd.verify_whether_place_id_created_maps_to("ABC");
 		
 		
 		}	

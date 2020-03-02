@@ -1,0 +1,117 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-03-02T06:03:25.596Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5702000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qa.StepDefinition.Hooks.createDeletePayload()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Verify whether place is being successfully deleted using DeletePlace API",
+        "description": "",
+        "id": "validating-place-api-s;verify-whether-place-is-being-successfully-deleted-using-deleteplace-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "DeletePlaceAPI Payload",
+            "match": {
+              "location": "com.qa.StepDefinition.StepDefinition.deleteplaceapi_Payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 136000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User calls the \"DeletePlaceAPI\" with \"Post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DeletePlaceAPI\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"Post\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.qa.StepDefinition.StepDefinition.user_calls_the_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Response is returned with Status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "com.qa.StepDefinition.StepDefinition.response_is_returned_with_Status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.qa.StepDefinition.StepDefinition.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@DeleteAPI"
+          }
+        ]
+      }
+    ],
+    "name": "Validating place API\u0027s",
+    "description": "",
+    "id": "validating-place-api-s",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/com/qa/Features/Features.feature",
+    "tags": []
+  }
+]
